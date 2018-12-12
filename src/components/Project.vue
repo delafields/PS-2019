@@ -2,10 +2,10 @@
   <div class="site">
 
     <TitleBar
-    class="title"
+      class="title"
       :pageTitle="post.data.title"
       leftLinkPath="/projects/"
-      leftLinkName="🔙"
+      leftLinkName="⇦"
       />
 
     <div id="blog-post">

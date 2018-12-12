@@ -94,7 +94,7 @@
 
 .content
   grid-area: content
-  overflow: scroll
+  overflow-y: scroll
   @include content-flex
 
 .content-item
