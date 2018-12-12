@@ -31,7 +31,7 @@
   import TinyFooter from './TinyFooter'
 
   import Butter from 'buttercms';
-  const butter = Butter(process.env.BUTTER_TOKEN);
+  const butter = Butter(process.env.VUE_APP_BUTTERTOKEN);
 
   export default {
     name: 'project',
