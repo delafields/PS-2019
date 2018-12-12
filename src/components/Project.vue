@@ -83,6 +83,11 @@
   h1, h2, h3, h4, h5, ul, ol, p, table
     @include news-cycle
 
+/* Media Queries */
+@media screen and (max-width: 800px)
+  .title > .title-name
+    font-size: 25px
+
 /* Default Buttercms stuff */
 #blog-post
   grid-area: content

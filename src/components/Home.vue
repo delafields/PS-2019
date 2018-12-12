@@ -6,7 +6,10 @@
   		<h6 id="about">
   			I studied Economics at the University of Maryland, College Park</br>
   			I currently work as a Data Analyst <a href="https://www.merkleinc.com/" target="_blank">@Merkle</a></br>
-  			In my free time I build things
+  			Check me out on
+        <a href="https://www.twitter.com/delafields" target="_blank">Twitter</a>,
+        <a href="https://www.github.com/delafields" target="_blank">Github</a>,
+        or <a href="https://www.kaggle.com/delafields" target="_blank">Kaggle</a>
   		</h6>
     </div>
 

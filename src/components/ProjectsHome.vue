@@ -139,7 +139,7 @@
 // Quirks
 @media screen and (max-width: 800px)
   .project-title
-    font-size: 20px
+    font-size: 25px
     color: $yeller
     @include shadow-to-right
     display: block
