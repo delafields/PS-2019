@@ -138,10 +138,13 @@
 
 // Quirks
 @media screen and (max-width: 800px)
+  .site
+    @include grid-layout-mobile
+
   .project-title
     font-size: 25px
-    color: $yeller
-    @include shadow-to-right
+    color: black
+    //@include shadow-to-right
     display: block
     text-align: center
 </style>

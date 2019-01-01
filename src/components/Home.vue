@@ -89,4 +89,9 @@ export default {
   text-decoration: none
   &:visited, &:active
     text-shadow: none
+
+// Media Queries
+@media screen and (max-width: 800px)
+  .site
+    @include grid-layout-mobile
 </style>

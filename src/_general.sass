@@ -41,6 +41,16 @@ $site-border: 20px solid white
   grid-template-rows: 100px auto 20px
   grid-template-areas: "title" "content" "tiny"
 
+@mixin grid-layout-mobile
+  height: 100vh
+  display: -ms-grid
+  display: grid
+  -ms-grid-columns: 100%
+  grid-template-columns: 100%
+  -ms-grid-rows: 100px auto 20px 44px
+  grid-template-rows: 100px auto 20px 44px
+  grid-template-areas: "title" "content" "tiny" "."
+
 @mixin tiny-flex
   -webkit-box-orient: horizontal
   -webkit-box-direction: normal
