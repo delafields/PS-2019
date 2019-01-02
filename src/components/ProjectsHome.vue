@@ -102,6 +102,13 @@
   min-width: 300px
   max-width: 600px
 
+//$colors: red, blue, green, yellow
+//@for $i from 1 through length($colors)
+  .content-item:nth-child(#{length($colors)}n+#{$i})
+    .hr-style
+      border-bottom: 2px dotted nth($colors, $i)
+      border-top: none
+
 .hr-style
   border-top: 1px dotted #8c8b8b
   border-bottom: 1px dotted #fff
@@ -143,8 +150,20 @@
 
   .project-title
     font-size: 25px
-    color: black
-    //@include shadow-to-right
+    color: red
     display: block
     text-align: center
+    &:hover
+      color: red
+      text-shadow: none
+
+  .content
+    grid-area: content
+    overflow-y: visible
+
+  //$colors: red, blue, green, yellow
+  //@for $i from 1 through length($colors)
+    .content-item:nth-child(#{length($colors)}n+#{$i})
+      .project-title
+        color: nth($colors, $i)
 </style>
