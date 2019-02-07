@@ -17,7 +17,7 @@
 			<router-link
         to="/projects/" class="page-link">PROJECTS</router-link>
 			</br>
-			<a href="mailto:badatfun@gmail.com" target="_blank" class="page-link">
+			<a href="mailto:jeremyfieldsmail@gmail.com" target="_blank" class="page-link">
         CONTACT
       </a>
 		</div>
