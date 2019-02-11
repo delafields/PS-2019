@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/Home.vue';
-import ProjectsHome from '@/components/ProjectsHome'
-import Project from '@/components/Project'
+import Projects from '@/components/Projects'
 import NotFound from '@/components/supersecret/NotFound'
 
 Vue.use(Router);
@@ -25,13 +24,8 @@ export default new Router({
     //},
     {
       path: '/projects/',
-      name: 'projects-home',
-      component: ProjectsHome
-    },
-    {
-      path: '/projects/:slug',
-      name: 'project',
-      component: Project
+      name: 'projects',
+      component: Projects
     },
     { path: '/404', component: NotFound },
     { path: '*', redirect: '/404' }

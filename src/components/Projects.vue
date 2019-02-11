@@ -12,15 +12,26 @@
     <div class="content">
       <div
         class="content-item"
-        v-for="(post,index) in posts"
-        :key="post.slug + '_' + index"
+        v-for="(project,index) in projects"
+        :key="project.date + '_' + index"
       >
-        <router-link class="project-title" :to="'/projects/' + post.slug">
-          {{post.title}}
-        </router-link>
-        <br>
-        <h2 class="project-description">{{post.summary}}</h2>
-        <hr class="hr-style">
+        <h2 class="project-title">
+          {{project.title}}
+        </h2>
+        <h2 class="project-description">{{project.description}}</h2>
+        <div class="project-meta">
+          <h5 class="meta-date">{{project.date}}</h5>
+          <div>
+            <a
+              v-for="(link,index) in project.links"
+              :href="link.address"
+              target="_blank"
+              class="meta-links"
+            >
+              {{link.name}}
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -32,32 +43,14 @@
 <script>
   import TitleBar from './TitleBar'
   import TinyFooter from './TinyFooter'
-
-  import Butter from 'buttercms';
-
-  const butter = Butter(process.env.VUE_APP_BUTTERTOKEN);
+  import projectsList from '../../public/projects.json'
 
   export default {
     name: 'projects-home',
     data() {
       return {
-        page_title: 'Blog',
-        posts: []
+        projects: projectsList
       }
-    },
-    methods: {
-      getPosts() {
-        butter.post.list({
-          page: 1,
-          page_size: 10
-        }).then(res => {
-          this.posts = res.data.data
-          console.log(this.posts)
-        })
-      }
-    },
-    created() {
-      this.getPosts()
     },
     components: {
       TitleBar,
@@ -77,9 +70,17 @@
   -webkit-box-direction: normal
   -ms-flex-direction: column
   flex-direction: column
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+@mixin meta-flex
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
 
 //–––––––––––––––––––––––––––––––––-––––––––––––––––––––––––––––––––––––––––––––
 //				General Styles
@@ -95,12 +96,17 @@
 .content
   grid-area: content
   overflow-y: scroll
-  @include content-flex
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+  grid-auto-rows: 200px
+  grid-gap: 1rem
+  padding: 20px
 
 .content-item
-  width: 70%
-  min-width: 300px
-  max-width: 600px
+  border-radius: 5px
+  padding: 10px
+  background-color: white
+  @include content-flex
 
 //$colors: red, blue, green, yellow
 //@for $i from 1 through length($colors)
@@ -113,6 +119,10 @@
   border-top: 1px dotted #8c8b8b
   border-bottom: 1px dotted #fff
 
+.project-meta
+  border-top: 1px dotted #8c8b8b
+  @include meta-flex
+
 .project-title
   overflow-wrap: break-word
 
@@ -120,30 +130,34 @@
 
 // Font Family
 .project-title
-  @include monoton
+  @include anton
 
-.project-description
+.project-description, .meta-date, .meta-links
   @include news-cycle
 
 // Sizing
 .project-title
-  font-size: 40px
+  font-size: 30px
+  text-transform: uppercase
+  text-align: center
 
 .project-description
   font-size: 20px
+  text-align: center
 
 // Colors
 .project-title, .project-description
   color: black
 
-.project-title
-  text-decoration: none
-  @include title-transition
+.meta-links
+  color: red
   &:hover
-    color: $yeller
-    @include shadow-to-right
+    color: black
 
 // Quirks
+.meta-links
+  text-decoration: none
+
 @media screen and (max-width: 800px)
   .site
     @include grid-layout-mobile
@@ -160,10 +174,4 @@
   .content
     grid-area: content
     overflow-y: visible
-
-  //$colors: red, blue, green, yellow
-  //@for $i from 1 through length($colors)
-    .content-item:nth-child(#{length($colors)}n+#{$i})
-      .project-title
-        color: nth($colors, $i)
 </style>
