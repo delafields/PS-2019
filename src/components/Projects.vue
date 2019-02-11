@@ -24,7 +24,7 @@
           <div>
             <a
               v-for="(link,index) in project.links"
-              :href="link.address"
+              :href="'//' + link.address"
               target="_blank"
               class="meta-links"
             >
@@ -164,12 +164,7 @@
 
   .project-title
     font-size: 25px
-    color: red
     display: block
-    text-align: center
-    &:hover
-      color: red
-      text-shadow: none
 
   .content
     grid-area: content

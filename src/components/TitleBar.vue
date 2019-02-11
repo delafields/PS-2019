@@ -47,14 +47,12 @@ $glow: 2px 2px 8px red, 0 0 5px white
 // Colors
 .title-name
   color: black
-  //color: $yeller
-  //text-shadow: $glow
 
 .title-link
   color: black
   text-decoration: none
   @include shadow-transition
-  &:first-child:hover
+  &:hover
     @include shadow-to-right
 
 // Quirks
@@ -71,9 +69,9 @@ $glow: 2px 2px 8px red, 0 0 5px white
   .title-link
     font-size: 20px
     position: static
-    &:first-child
-      &:hover, &:visited, &:active
-        text-shadow: none
-        color: black
+    color: red
+    &:hover
+      text-shadow: none
+      color: black
 
 </style>
