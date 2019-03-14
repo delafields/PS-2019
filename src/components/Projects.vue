@@ -29,6 +29,7 @@
               class="meta-links"
             >
               {{link.name}}
+              <span v-if="index+1 < project.links.length" style="color: black"> | </span>
             </a>
           </div>
         </div>
@@ -107,6 +108,10 @@
   padding: 10px
   background-color: white
   @include content-flex
+  box-shadow: 0 0px 3px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.12)
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+  &:hover
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
 
 //$colors: red, blue, green, yellow
 //@for $i from 1 through length($colors)

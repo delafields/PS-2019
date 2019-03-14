@@ -1,88 +1,113 @@
 [
   {
-    "title": "Project 1",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019",
+    "title": "Gym Scraper",
+    "description": "Texts me a workout every morning",
+    "date": "10/2/2018",
     "links": [
       {
         "name": "Code",
-        "address": "www.google.com"
-      },
-      {
-        "name": "Kaggle",
-        "address": "www.Kaggle.com"
+        "address": "https://github.com/delafields/GymScraper"
       }
     ]
   },
   {
-    "title": "Project 2",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
+    "title": "Rap Adlibs",
+    "description": "An Alexa skill that quizzes you on favorite rapper's adlibs",
+    "date": "1/16/2018",
+    "links": [
+      {
+        "name": "Code",
+        "address": "https://github.com/delafields/alexa-skills/tree/master/rap_adlibs"
+      },
+      {
+        "name": "Skill",
+        "address": "https://www.amazon.com/badatfun-Rap-Adlibs/dp/B078WYKNGP/ref=cm_cr_arp_d_product_top?ie=UTF8"
+      }
+    ]
   },
   {
-    "title": "Project 3",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
+    "title": "Help plz",
+    "description": "A CLI tool for fuzzy searching documentation, SO, Google, and npm.",
+    "date": "1/5/2018",
+    "links": [
+      {
+        "name": "Code",
+        "address": "https://github.com/delafields/CLI/tree/master/HelpPlz"
+      }
+    ]
   },
   {
-    "title": "Project 4",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
+    "title": "Screenshotta",
+    "description": "A CLI tool for anonymously hosting screenshots",
+    "date": "1/7/2018",
+    "links": [
+      {
+        "name": "Code",
+        "address": "https://github.com/delafields/CLI/tree/master/Screenshotta"
+      }
+    ]
   },
   {
-    "title": "Project 5",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
+    "title": "Smart Mirror",
+    "description": "A React app that displays news, stock prices, calendar, and weather running on a RPi.",
+    "date": "10/25/2018",
+    "links": [
+      {
+        "name": "Code",
+        "address": "https://github.com/delafields/smartmirror-react"
+      }
+    ]
   },
   {
-    "title": "Project 6",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
+    "title": "Favoritify",
+    "description": "See your favorite Spotify music (artists, tracks, genres, song features) over different time periods.",
+    "date": "12/8/2017",
+    "links": [
+      {
+        "name": "Code",
+        "address": "https://github.com/delafields/Favoritify"
+      },
+      {
+        "name": "Site",
+        "address": "http://favoritify.herokuapp.com"
+      }
+    ]
   },
   {
-    "title": "Project 4",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
+    "title": "Nokiacoin",
+    "description": "A bot that tweets the price of BTC in terms of Nokia cell model #'s",
+    "date": "4/29/2018",
+    "links": [
+      {
+        "name": "Code",
+        "address": "https://github.com/delafields/Nokiacoin"
+      },
+      {
+        "name": "Twitter",
+        "address": "https://twitter.com/Nokiacoin"
+      }
+    ]
   },
   {
-    "title": "Project 5",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
+    "title": "Standing Desk",
+    "description": "A little stand to help me stand.",
+    "date": "5/20/2017",
+    "links": [
+      {
+        "name": "Imgur",
+        "address": "https://imgur.com/a/PxWC6"
+      }
+    ]
   },
   {
-    "title": "Project 6",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
-  },
-  {
-    "title": "Project 4",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
-  },
-  {
-    "title": "Project 5",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
-  },
-  {
-    "title": "Project 6",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
-  },
-  {
-    "title": "Project 4",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
-  },
-  {
-    "title": "Project 5",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
-  },
-  {
-    "title": "Project 6",
-    "description": "This was a little thing I made.",
-    "date": "2/10/2019"
+    "title": "Potting Table",
+    "description": "Mother's Day gift, 2017.",
+    "date": "5/20/2017",
+    "links": [
+      {
+        "name": "Imgur",
+        "address": "https://imgur.com/a/dHMST"
+      }
+    ]
   }
-
 ]
