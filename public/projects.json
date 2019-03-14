@@ -26,6 +26,21 @@
     ]
   },
   {
+    "title": "Atom Material Colors",
+    "description": "An Atom color palette plugin",
+    "date": "1/16/2018",
+    "links": [
+      {
+        "name": "Code",
+        "address": "https://github.com/delafields/atom-material-colors"
+      },
+      {
+        "name": "Package",
+        "address": "https://atom.io/packages/material-colors"
+      }
+    ]
+  },
+  {
     "title": "Help plz",
     "description": "A CLI tool for fuzzy searching documentation, SO, Google, and npm.",
     "date": "1/5/2018",
