@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "start": "node server.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "dependencies": {
     "express": "^4.16.4",
@@ -48,5 +49,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "heroku-run-build-script": true
 }
